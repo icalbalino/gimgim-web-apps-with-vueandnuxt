@@ -9,3 +9,12 @@
 - add background.svg
 - add components
 - add state
+
+- add basesvg.svg to App.vue
+- add ui State
+- using vmapState
+- add GamestateStart.vue (showing a modal)
+- add a slot
+- v-if/v-else for ui state (start)
+- add state (character, characterChoices)
+- v-for (loop the characterChoices)

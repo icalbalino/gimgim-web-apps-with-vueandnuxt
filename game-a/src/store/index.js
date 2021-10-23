@@ -5,6 +5,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    uiState: 'start',
+    character: "",
+    characterChoices: ["baker", "mechanic", "artist"],
     questions: [
       {
         question: `What's your dog's name?`,
