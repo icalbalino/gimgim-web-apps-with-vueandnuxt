@@ -78,7 +78,7 @@
         <h3>{{ questions[questionIndex].question }}</h3>
       </div>
       <div class="zombietalk">
-        <p v-for="character in characterChoices" :key="character">
+        <p v-for="character in shuffle(characterChoices)" :key="character">
           <button @click="pickQuestion(character)">
             {{ questions[questionIndex][character] }}
           </button>
@@ -125,6 +125,13 @@ export default {
     },
     pickQuestion(character) {
       this.$store.commit("pickQuestion", character)
+    },
+    shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[array[i], array[j]] = [array[j], array[i]]
+      }
+      return array
     },
   },
 };

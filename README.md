@@ -42,4 +42,11 @@ npm install
 - check if the `state.character` is the `character`
 - update the `score` and question index
 ###
-
+- install gsap library `npm install gsap`
+- give needle some visual indication
+- check the needle if going off or the right way (use `watcher`)
+- open `Score.vue` import `gsap` and add `watcher` 
+- adding score to the end of game state (array of question)
+- get to the end of the question index 
+- tell UI state (won or lost) pass that as a string
+- add `shuffle` method
