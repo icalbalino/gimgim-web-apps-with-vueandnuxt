@@ -35,3 +35,11 @@ npm install
 - add buttons to answer the question
 - in `zombietalk` loop the characterChoices
 - the output is the character
+###
+- updating the `score` based you got the character on not
+- select something and go to the next question
+- make the `pickQuestion` mutation and `method`
+- check if the `state.character` is the `character`
+- update the `score` and question index
+###
+

@@ -56,6 +56,17 @@ export default new Vuex.Store({
     updateUIState(state, uistate) {
       state.uiState = uistate
     },
+    pickQuestion(state, character) {
+      character === state.character ? (state.score += 13) : (state.score -= 13)
+
+      if (state.questionIndex < state.questions.length - 1) {
+        state.questionIndex++
+      } else {
+        Math.sign(state.score) > 0 ?
+          (state.uiState = "won") :
+          (state.uiState = "lost")
+      }
+    },
   },
   actions: {},
   modules: {},

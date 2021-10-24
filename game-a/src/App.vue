@@ -124,8 +124,7 @@ export default {
       this.$store.commit("updateUIState", "characterChosen")
     },
     pickQuestion(character) {
-      console.log(character)
-      //this.$store.commit("pickQuestion", character)
+      this.$store.commit("pickQuestion", character)
     },
   },
 };
