@@ -5,8 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    uiState: 'start',
-    character: '',
+    uiState: "start",
+    character: "",
     characterChoices: ["baker", "mechanic", "artist"],
     questionIndex: 0,
     score: 0,
@@ -67,7 +67,13 @@ export default new Vuex.Store({
           (state.uiState = "lost")
       }
     },
+    updateScore(state, amount) {
+      state.score = amount
+    },
+    restartGame(state) {
+      state.uiState = "start"
+      state.score = 0
+      state.questionIndex = 0
+    },
   },
-  actions: {},
-  modules: {},
 });

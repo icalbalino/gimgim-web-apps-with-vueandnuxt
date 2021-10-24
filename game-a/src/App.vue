@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="contain">
-
     <GamestateStart v-if="uiState === 'start'">
       <h2>do you want to be ?</h2>
       <p
@@ -17,11 +16,10 @@
         <label :for="option">{{ option }}</label>
         <br />
       </p>
-
       <button @click="pickCharacter">Pick your character</button>
     </GamestateStart>
 
-    <section v-else>
+    <section v-else-if="uiState === 'characterChosen'">
       <svg viewBox="0 -180 1628 1180" class="main">
         <defs>
           <clipPath id="bottom-clip">
@@ -85,6 +83,8 @@
         </p>
       </div>
     </section>
+
+    <GamestateFinish v-else />
   </div>
 </template>
 
@@ -97,8 +97,10 @@ import Mechanic from '@/components/Mechanic.vue';
 import Score from '@/components/Score.vue';
 import Zombie from '@/components/Zombie.vue';
 
+import gsap from 'gsap';
 import { mapState } from 'vuex';
 import GamestateStart from '@/components/GamestateStart.vue';
+import GamestateFinish from '@/components/GamestateFinish.vue';
 
 export default {
   components: {
@@ -109,14 +111,15 @@ export default {
     Mechanic,
     Score,
     Zombie,
+    GamestateFinish,
   },
   data() {
     return {
-      characterinput: '',
+      characterinput: "",
     }
   },
   computed: {
-    ...mapState(["uiState", "questions", "character", "characterChoices", "questionIndex"]),
+    ...mapState(["uiState", "questions", "character", "characterChoices", "questionIndex", "score"]),
   },
   methods: {
     pickCharacter() {
@@ -132,6 +135,14 @@ export default {
         ;[array[i], array[j]] = [array[j], array[i]]
       }
       return array
+    },
+  },
+  watch: {
+    score(newValue, oldValue) {
+      console.log(oldValue)
+      gsap.to(".bottom-clip-path, .top-clip-path", {
+        y: -newValue * 6,
+      })
     },
   },
 };

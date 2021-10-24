@@ -70,9 +70,7 @@ import { mapState } from 'vuex';
 
 export default {
   computed: {
-    ...mapState([
-      'score',
-    ])
+    ...mapState(["score"])
   },
   // computed: {
   //   score() {
