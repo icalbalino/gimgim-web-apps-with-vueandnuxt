@@ -26,3 +26,12 @@ npm install
 - add mutations and call mutations (committing)
 - add some folks and different component for character
 - and make it loading in different characters conditionally
+###
+- creating a question index (questionIndex and score) in `store`
+- add class friendtalk and class zombietalk
+- mention `questionIndex`
+- grab that question array (output) in `friendtalk`
+- `questions[questionIndex].question`
+- add buttons to answer the question
+- in `zombietalk` loop the characterChoices
+- the output is the character
