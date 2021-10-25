@@ -85,6 +85,9 @@ The application is now running on http://localhost:3000 . Well done!
 - SFC (single file component)
 - we'll use `default.vue`
 - create a masthead `AppHeader.vue` using [Hero Generator](https://hero-generator.netlify.app/)
+- create a `footer` and `restaurant.vue`
+- create `nuxt-link` to restaurant
+- 
 
 
 
