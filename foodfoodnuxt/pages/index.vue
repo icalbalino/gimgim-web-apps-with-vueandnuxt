@@ -1,18 +1,18 @@
 <template>
   <main class="container">
     <AppHeader /> 
-    <!-- <AppRestaurantInfo /> -->
+    <AppRestaurantInfo />
   </main>
 </template>
 
 <script>
- import AppHeader from "@/components/AppHeader.vue";
-// import AppRestaurantInfo from "@/components/AppRestaurantInfo.vue";
+import AppHeader from "@/components/AppHeader.vue";
+import AppRestaurantInfo from "@/components/AppRestaurantInfo.vue";
 
 export default {
   components: {
     AppHeader,
-    //AppRestaurantInfo
+    AppRestaurantInfo
   }
 };
 </script>

@@ -7,6 +7,7 @@
       <p v-if="store.freeDelivery" class="label">
         <span>Free Delivery</span>
       </p>
+      
       <div class="row">
         <div
           v-for="menuitem in store.menu"
