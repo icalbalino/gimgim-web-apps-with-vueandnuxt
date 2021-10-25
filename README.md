@@ -63,6 +63,27 @@ npm install
 - we create a result modal
 ###
 
+## keynote project foodfoodnuxt
+```
+npm init nuxt-app foodfoodnuxt
+```
+```
+cd foodfoodnuxt
+npm run dev
+```
+The application is now running on http://localhost:3000 . Well done!
+###
+**Open project foodfoodnuxt**
+###
+- manually add dir assets, layouts, middleware, and plugins  
+- google font setup - [Mulish and Poppins](https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@600&display=swap)
+- config and add `assets` `components` `layouts` `pages` `static` `store` `nuxt.config.js`
+- adding manually stuff like image, css(scss), and readme file
+- 
+
+
+
+
 _Author: Ical Balino_
 
 ###
