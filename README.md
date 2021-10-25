@@ -87,9 +87,20 @@ The application is now running on http://localhost:3000 . Well done!
 - create a masthead `AppHeader.vue` using [Hero Generator](https://hero-generator.netlify.app/)
 - create a `footer` and `restaurant.vue`
 - create `nuxt-link` to restaurant
-- 
-
-
+###
+- bring things via `API`, via `Vuex Store`, and a `Plugin`
+- our [API](https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants)
+- empty the `fooddata` in `store` to empty array
+- adding `actions` and `mutations`
+- in `actions` we `fetch` the API
+- using a API key `process.env.AWS_API_KEY` and `.env` file (that file is get ignore)
+- using an `actions` to call `mutations` (asynchronous logic) and `mutations` changes the state
+- we're gonna build and concatenate all those files and create dynamic routes from all of these pages
+- creating on the server, call it once while the pages are building instead calling on the client
+- adding `getfood.server.js` in `plugins`, is tell nuxt do this on the server don't on the client
+- in `getfood.server.js` pass in the `store` remember we dispatch `actions`, we commit `mutations`
+- go into nuxt config and let it know that this plugins exists `'~/plugins/getfood.server.js'`
+- now data it's not coming in from that static piece of information, it's coming in from API
 
 ###
 
