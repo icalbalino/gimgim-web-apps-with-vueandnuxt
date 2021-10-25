@@ -62,6 +62,7 @@ npm install
 - and uistate has `finish` and uistate `won or lost`
 - we create a result modal
 ###
+###
 
 ## keynote project foodfoodnuxt
 ```
@@ -79,10 +80,15 @@ The application is now running on http://localhost:3000 . Well done!
 - google font setup - [Mulish and Poppins](https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@600&display=swap)
 - config and add `assets` `components` `layouts` `pages` `static` `store` `nuxt.config.js`
 - adding manually stuff like image, css(scss), and readme file
-- 
+- create pages
+- create import `AppMenu.vue` and explain what Nuxt Layouts do
+- SFC (single file component)
+- we'll use `default.vue`
 
 
 
+
+###
 
 _Author: Ical Balino_
 
