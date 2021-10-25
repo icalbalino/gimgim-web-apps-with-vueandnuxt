@@ -84,7 +84,7 @@ The application is now running on http://localhost:3000 . Well done!
 - create import `AppMenu.vue` and explain what Nuxt Layouts do
 - SFC (single file component)
 - we'll use `default.vue`
-
+- create a masthead `AppHeader.vue` using [Hero Generator](https://hero-generator.netlify.app/)
 
 
 

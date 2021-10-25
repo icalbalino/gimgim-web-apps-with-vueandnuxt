@@ -1,9 +1,9 @@
 <template>
     <div>
-       <div class="content">
-          <AppMenu />
-          <Nuxt />
-        </div>
+      <div class="content">
+        <AppMenu />
+        <Nuxt />
+      </div>
     </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 html {
   font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
