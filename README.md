@@ -101,6 +101,14 @@ The application is now running on http://localhost:3000 . Well done!
 - in `getfood.server.js` pass in the `store` remember we dispatch `actions`, we commit `mutations`
 - go into nuxt config and let it know that this plugins exists `'~/plugins/getfood.server.js'`
 - now data it's not coming in from that static piece of information, it's coming in from API
+###
+- create components `AppSelect.vue`, add `<select>`, and `props`
+- import into `restaurant.vue` in pages
+- we wanna emit from the child to the parent, what the value is
+- `vemit-child` in select tag 
+- collecting data to `data()` and return `selectedRestaurant` in `restaurant.vue`
+- `vemit-parent` on that `<AppSelect />`
+
 
 ###
 
