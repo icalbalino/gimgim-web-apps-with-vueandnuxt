@@ -108,6 +108,12 @@ The application is now running on http://localhost:3000 . Well done!
 - `vemit-child` in select tag 
 - collecting data to `data()` and return `selectedRestaurant` in `restaurant.vue`
 - `vemit-parent` on that `<AppSelect />`
+- make a `computed` properties
+- add import `mapstate` `filteredRestaurants()`
+- in `AppRestaurantInfo.vue` delete `mapstate`, `computed` with `fooddata`
+- we need bring `props` with `datasource`
+- on that `<AppRestaurantInfo />` in `restaurant` passing in the `props`
+- in the home page `index.vue` passing in the `fooddata`, call `vmapsate` in `computed`
 
 
 ###
