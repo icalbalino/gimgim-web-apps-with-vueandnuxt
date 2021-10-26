@@ -114,7 +114,16 @@ The application is now running on http://localhost:3000 . Well done!
 - we need bring `props` with `datasource`
 - on that `<AppRestaurantInfo />` in `restaurant` passing in the `props`
 - in the home page `index.vue` passing in the `fooddata`, call `vmapsate` in `computed`
-
+###
+- create `_id.vue` inside `item` directori in `pages`
+- go in `AppRestaurantInfo.vue` `add nuxt-link`
+- in `_id.vue` add `vmapsate` and bring `fooddata`, add `currentItem`
+- add `main` with class `container`
+- add `section` it's working with image, add section with class `details`
+- we have `fieldset` for `option` and `addon`
+- add `section` with class `option`
+- make a `combinedPrice`
+- collecting data to `data()`
 
 ###
 
