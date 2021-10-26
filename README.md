@@ -124,6 +124,11 @@ The application is now running on http://localhost:3000 . Well done!
 - add `section` with class `option`
 - make a `combinedPrice`
 - collecting data to `data()`
+###
+- creating toast component `AppToast.vue` with `slot`, go to `_id.vue` and import
+- on `data()` make `cartSubmitted: false`
+- add click handler on button add to cart
+- make `addToCart` method, on that make `formOutput` to add things to a cart
 
 ###
 
