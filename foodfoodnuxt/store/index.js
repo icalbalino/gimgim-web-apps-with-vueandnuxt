@@ -153,10 +153,10 @@ export const state = () => ({
 });
 
 export const getters = {
-  // cartCount: state => {
-  //   if (!state.cart.length) return 0;
-  //   return state.cart.reduce((ac, next) => ac + +next.count, 0);
-  // },
+  cartCount: state => {
+    if (!state.cart.length) return 0;
+    return state.cart.reduce((ac, next) => ac + +next.count, 0);
+  },
   totalPrice: state => {
     if (!state.cart.length) return 0;
     return state.cart.reduce((ac, next) => ac + +next.combinedPrice, 0);
@@ -191,7 +191,7 @@ export const actions = {
       )
         .then(response => response.json())
         .then(data => {
-          console.log(data);
+          // console.log(data);
           commit("updateFoodData", data);
         });
     } catch (err) {

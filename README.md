@@ -153,6 +153,17 @@ The application is now running on http://localhost:3000 . Well done!
 - create `getters` in store `index.js`, `totalPrice` getter
 - we're returning the reduction of all the combined price in that cart
 - now we can use into `cart.vue`, bringing in that `getters` from the store with `mapGetters`
+###
+- show the count of the cart in the menu use class `'smallnum'`
+- if the cart is empty, show the empty cart SVG, make it accessible
+- using getters make `cartCount` in store `index.js`
+- we're using it, is gonna be inside the components into `AppMenu.vue` 
+- bring that in from `vuex` with `mapgetters` 
+- inside the `cart.vue`, make section `v-if` **if the cart have some length** show this cart
+- make components `AppEmptyCart.vue`, otherwise we wanna show this **if the cart had no length**
+- in `AppEmptyCart.vue` we make section and we've got this SVG
+- add `AppEmptyCart.vue` on that `cart.vue`
+
 
 
 ###
