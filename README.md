@@ -139,6 +139,12 @@ The application is now running on http://localhost:3000 . Well done!
 - import and use `uuid` in store `index.js`
 - go to pages create `cart.vue`, and also add cart into the `AppMenu.vue`
 - make sure we're actually doing that, go to _localhost->devtools->vue->vuex_
+###
+- create an `SVG` icon with conditional layout
+- make a component `AppLogo.vue`
+- get the svg `foodlogo.svg` in resource and drop into `AppLogo.vue`
+- make it semantic and good for screen readers with `aria-labelledby`
+- add to the App `AppMenu.vue`
 
 ###
 
