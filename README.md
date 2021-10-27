@@ -145,6 +145,15 @@ The application is now running on http://localhost:3000 . Well done!
 - get the svg `foodlogo.svg` in resource and drop into `AppLogo.vue`
 - make it semantic and good for screen readers with `aria-labelledby`
 - add to the App `AppMenu.vue`
+###
+- take whatevers on the cart we're going to show
+- also going to use `getters` to show combined price for everything
+- put static table on `cart.vue`, use `mapstate` to go gather the cart
+- loop through all of the table rows to put what on the cart to the table
+- create `getters` in store `index.js`, `totalPrice` getter
+- we're returning the reduction of all the combined price in that cart
+- now we can use into `cart.vue`, bringing in that `getters` from the store with `mapGetters`
+
 
 ###
 
