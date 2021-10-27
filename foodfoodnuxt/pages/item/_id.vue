@@ -112,7 +112,7 @@ export default {
         };
 
         this.cartSubmitted = true;
-        //this.$store.commit("addToCart", formOutput);
+        this.$store.commit("addToCart", formOutput);
         },
     },
 };

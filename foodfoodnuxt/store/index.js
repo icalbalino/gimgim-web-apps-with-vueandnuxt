@@ -1,3 +1,7 @@
+import {
+  v4 as uuidv4
+} from "uuid";
+
 export const state = () => ({
   //   fooddata: [{
   //     name: "Taco bout Eating Tacos",
@@ -144,7 +148,8 @@ export const state = () => ({
   //     ]
   //   }
   // ]
-  fooddata: []
+  fooddata: [],
+  cart: []
 });
 
 // export const getters = {
@@ -156,7 +161,11 @@ export const state = () => ({
 export const mutations = {
   updateFoodData: (state, data) => {
     state.fooddata = data;
-  }
+  },
+  addToCart: (state, formOutput) => {
+    formOutput.id = uuidv4();
+    state.cart.push(formOutput);
+  },
 };
 
 export const actions = {

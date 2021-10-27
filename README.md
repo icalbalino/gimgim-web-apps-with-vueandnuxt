@@ -129,6 +129,16 @@ The application is now running on http://localhost:3000 . Well done!
 - on `data()` make `cartSubmitted: false`
 - add click handler on button add to cart
 - make `addToCart` method, on that make `formOutput` to add things to a cart
+###
+- using vuex store mutations and [UUID](https://www.npmjs.com/package/uuid)
+- add store commit on `_id.vue`
+- go in store `index.js` add `cart` with empty array 
+- on that mutations add `addToCart`
+- create cart page and make use of uuid
+- install uuid package `npm install uuid`
+- import and use `uuid` in store `index.js`
+- go to pages create `cart.vue`, and also add cart into the `AppMenu.vue`
+- make sure we're actually doing that, go to _localhost->devtools->vue->vuex_
 
 ###
 
