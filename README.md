@@ -163,6 +163,19 @@ The application is now running on http://localhost:3000 . Well done!
 - make components `AppEmptyCart.vue`, otherwise we wanna show this **if the cart had no length**
 - in `AppEmptyCart.vue` we make section and we've got this SVG
 - add `AppEmptyCart.vue` on that `cart.vue`
+###
+- we wanna make sure of that we can't add to the cart unless some addon was added
+- make sure that the user does that with [vuelidate](https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/)
+- install vuelidate `npm install vuelidate --save`
+- make `vuelidate.js` in plugins, register on `nuxt.config`
+- go into `_id.vue` add `v-model="$v.itemOptions.$model"` and `v-model="$v.itemAddons.$model"`
+- connecting to `itemOptions` with `$` sign
+- go down import the `required` from vuelidate and make `validations` object
+- on `data()` we wanna have this things called `errors: false`
+- we're going to check if `addOnError` `optionError` invalid or errors
+- if there's errors than `this.errors = true` but if not `this.errors = false`
+- `this.cartSubmitted = true` and go ahead
+- store commit `addToCart` to add to the cart until that's done, until we have validate that exists
 
 
 
