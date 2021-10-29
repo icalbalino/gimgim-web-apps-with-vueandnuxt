@@ -176,7 +176,31 @@ The application is now running on http://localhost:3000 . Well done!
 - if there's errors than `this.errors = true` but if not `this.errors = false`
 - `this.cartSubmitted = true` and go ahead
 - store commit `addToCart` to add to the cart until that's done, until we have validate that exists
+###
 
+## keynote project Composition API
+**adding composition API to nuxt**
+```
+npm init nuxt-app composition-api
+```
+```
+cd composition-api
+npm run dev
+```
+The application is now running on http://localhost:3000 . Well done!
+###
+- `npm install @vue/composition-api node-sass sass-loader`
+- `npm install @nuxt/types @nuxt/typescript-build --save-dev`
+- bring in `typescript` in order to use it with nuxt currently `tsconfig.json`
+- make a plugins `composition-api.js`, where we using the composition API
+- then register plugin `composition-api.js` in `nuxt.config`
+- also bring in the build module `@nuxt/typescript-build`
+- go into pages `index.vue` add import `@vue/composition-api`
+- create `setup()` add `watchEffect`, `addToCount` and things
+- create `tacofriends.vue` with a list and show it in the page
+- create a method to show display the clicked list item in an alert 
+- create `AppMenu.vue`, add that page to the `AppMenu.vue`
+- we have layout `default.vue` to bring in `AppMenu.vue`
 
 
 ###
