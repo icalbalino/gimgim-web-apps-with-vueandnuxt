@@ -212,11 +212,11 @@ The application is now running on http://localhost:3000 . Well done!
 - we have layout `default.vue` to bring in `AppMenu.vue`
 ###
 
-##
+###
 
-_Author: Ical Balino_
+**_Author: Ical Balino_**
 
-##
+###
 
 ## License
 [MIT license](https://mit-license.org/)
