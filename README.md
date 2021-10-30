@@ -12,7 +12,9 @@ npm install
 - add components
 - add state
 ###
+
 **Open project game-a**
+
 ###
 - add basesvg.svg to `App.vue`
 - add ui State
@@ -62,7 +64,6 @@ npm install
 - and uistate has `finish` and uistate `won or lost`
 - we create a result modal
 ###
-###
 
 ## keynote project foodfoodnuxt
 ```
@@ -74,7 +75,9 @@ npm run dev
 ```
 The application is now running on http://localhost:3000 . Well done!
 ###
+
 **Open project foodfoodnuxt**
+
 ###
 - manually add dir assets, layouts, middleware, and plugins  
 - google font setup - [Mulish and Poppins](https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@600&display=swap)
@@ -179,7 +182,9 @@ The application is now running on http://localhost:3000 . Well done!
 ###
 
 ## keynote project Composition API
+
 **adding composition API to nuxt**
+
 ```
 npm init nuxt-app composition-api
 ```
@@ -188,6 +193,10 @@ cd composition-api
 npm run dev
 ```
 The application is now running on http://localhost:3000 . Well done!
+###
+
+**Open project composition-api**
+
 ###
 - `npm install @vue/composition-api node-sass sass-loader`
 - `npm install @nuxt/types @nuxt/typescript-build --save-dev`
@@ -201,10 +210,10 @@ The application is now running on http://localhost:3000 . Well done!
 - create a method to show display the clicked list item in an alert 
 - create `AppMenu.vue`, add that page to the `AppMenu.vue`
 - we have layout `default.vue` to bring in `AppMenu.vue`
-
-
 ###
+
+##
 
 _Author: Ical Balino_
 
-###
+##
