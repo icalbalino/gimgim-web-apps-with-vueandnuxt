@@ -217,3 +217,6 @@ The application is now running on http://localhost:3000 . Well done!
 _Author: Ical Balino_
 
 ##
+
+## License
+[MIT license](https://mit-license.org/)
